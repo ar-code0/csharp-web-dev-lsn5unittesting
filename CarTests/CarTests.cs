@@ -51,9 +51,8 @@ namespace CarTests
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void TestGasOverfillException()
         {
-            test_car.AddGas(10);
+            test_car.AddGas(1);
             Assert.Fail("Shouldn't get here, car cannot have more gas in tank than the size of the tank");
-
         }
     }
 }
